@@ -2,13 +2,9 @@ In Angular, services are a core feature that allows you to organize and reuse co
 
 #### Why Use Angular Services?
 
-1. **Separation of Concerns**: Services allow you to offload logic from components. Components are mostly responsible for handling the view, while services deal with application logic, such as retrieving data or handling complex operations. This helps keep your code clean and organized​(
+1. **Separation of Concerns**: Services allow you to offload logic from components. Components are mostly responsible for handling the view, while services deal with application logic, such as retrieving data or handling complex operations. This helps keep your code clean and organized​([Angular](https://angular.io/guide/architecture-services))​([Angular](https://angular.dev/tutorials/first-app/09-services/)).
     
-    [Angular](https://angular.io/guide/architecture-services))​([Angular](https://angular.dev/tutorials/first-app/09-services/)).
-    
-2. **Reusability**: Once you define a service, it can be injected and used across multiple components. This avoids repeating the same code in different parts of your application, making it easier to update and maintain​(
-    
-    [FreeCodeCamp](https://www.freecodecamp.org/news/angular-services-and-dependency-injection-explained/))​([DEV Community](https://dev.to/this-is-angular/introduction-to-angular-services-j55)).
+2. **Reusability**: Once you define a service, it can be injected and used across multiple components. This avoids repeating the same code in different parts of your application, making it easier to update and maintain​([FreeCodeCamp](https://www.freecodecamp.org/news/angular-services-and-dependency-injection-explained/))​([DEV Community](https://dev.to/this-is-angular/introduction-to-angular-services-j55)).
     
 3. **Dependency Injection**: Angular has a built-in Dependency Injection (DI) system, making it easy to use services across different parts of your app. You can inject services directly into your components or other services by declaring them in the constructor and marking them with `@Injectable` decorator​([DEV Community](https://dev.to/this-is-angular/introduction-to-angular-services-j55))​([TekTutorialsHub](https://www.tektutorialshub.com/angular/angular-services/)).
     
@@ -53,9 +49,7 @@ In Angular, services are a core feature that allows you to organize and reuse co
     
     This ensures that the `LoggingService` can be accessed from within the `AppComponent`​([Angular](https://angular.dev/tutorials/first-app/09-services/))​([FreeCodeCamp](https://www.freecodecamp.org/news/angular-services-and-dependency-injection-explained/)).
     
-3. **Using Services with Dependency Injection**: The `providedIn: 'root'` setting in the `@Injectable` decorator makes the service available globally, meaning Angular creates a single instance (singleton) of the service across the entire application​(
-    
-    [FreeCodeCamp](https://www.freecodecamp.org/news/angular-services-and-dependency-injection-explained/)).
+3. **Using Services with Dependency Injection**: The `providedIn: 'root'` setting in the `@Injectable` decorator makes the service available globally, meaning Angular creates a single instance (singleton) of the service across the entire application​([FreeCodeCamp](https://www.freecodecamp.org/news/angular-services-and-dependency-injection-explained/)).
     
 
 #### Common Use Cases for Angular Services
@@ -129,7 +123,7 @@ export class AppComponent implements OnInit {
 
 OUTPUT:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728048486457/2a7e8ded-9fd5-4148-9eef-69d00d97cc9d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728048486457/2a7e8ded-9fd5-4148-9eef-69d00d97cc9d.png)
 
 At this point, the HTML is set up, but the functionality isn't there yet. The buttons don't do anything, and the list doesn't display any data because `universityList` is not defined.
 
